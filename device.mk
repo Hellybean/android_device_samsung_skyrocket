@@ -20,9 +20,6 @@ $(call inherit-product-if-exists, vendor/samsung/skyrocket/skyrocket-vendor.mk)
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/skyrocket/overlay
 
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro
-TOOLCHAIN_GNUEABIHF := true
-
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/skyrocket/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
